@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	height: 400px;
+	width: 400px;
+	background-color: rgb(223, 223, 223);
+	border-radius: 12px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	border: 1px solid rgb(172, 172, 172);
+	padding: 12px;
+}
+
+
+.centralWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	justify-content: center;
+}
+.interface {
+	display: flex;
+	border: 1px solid;
+	width: 400px;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+}
+.cebula {
+    background-color: rgb(172, 172, 172);
+    padding: 8px 16px;
+     font-weight: bold;
+     border: none;
+    border-radius: 8px;
+    transition: 0.5s ease;
+
+    
+    &:hover {
+        background-color: aquamarine;
+
+    }
+}
